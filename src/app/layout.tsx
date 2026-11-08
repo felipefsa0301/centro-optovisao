@@ -84,14 +84,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className="antialiased text-slate-800 bg-white">
+    <html lang="pt-BR" className="antialiased text-slate-800 bg-[#FAF9F6]">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col font-sans selection:bg-[#19336A] selection:text-white">
+      <body className="min-h-screen flex flex-col font-sans bg-[#FAF9F6] selection:bg-[#19336A] selection:text-white">
         {children}
       </body>
     </html>
