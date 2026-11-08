@@ -280,47 +280,35 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Card de Alerta de Sintomas - Calmo, Sólido e Acolhedor */}
+              {/* Fotografia Editorial de Atendimento Optométrico */}
               <div className="lg:col-span-5">
-                <div className="relative bg-gradient-to-br from-[#19336A] to-[#152C5B] rounded-2xl p-6 sm:p-7 text-white shadow-md border border-white/10">
-                  <div className="space-y-5">
-                    <div className="inline-flex p-3 bg-white/10 rounded-xl">
-                      <Eye className="w-8 h-8 text-sky-300" />
-                    </div>
+                <div className="relative mx-auto max-w-md lg:max-w-none">
+                  <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-slate-200/90 bg-slate-100 shadow-md">
+                    <Image
+                      src="/images/hero-optometria.jpg"
+                      alt="Optometrista realizando exame de vista computadorizado no Centro OptoVisão em Santo Estêvão"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 42vw"
+                      className="object-cover object-center"
+                      priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0F224A]/80 via-[#0F224A]/15 to-transparent" />
 
-                    <h2 className="text-xl sm:text-2xl font-bold tracking-tight">
-                      Quando foi a sua última consulta visual?
-                    </h2>
-
-                    <p className="text-slate-200 text-sm leading-relaxed">
-                      Sintomas comuns como dores de cabeça ao fim do dia, cansaço em frente a telas e visão embaçada para perto ou longe indicam a necessidade de uma avaliação detalhada.
-                    </p>
-
-                    <div className="space-y-2.5 pt-1">
-                      <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3 text-sm font-medium">
-                        <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
-                        <span>Avaliação refracional computadorizada</span>
+                    {/* Legenda discreta integrada sobre a imagem */}
+                    <div className="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-5 sm:right-5 rounded-xl bg-white/95 backdrop-blur-md p-4 shadow-sm border border-slate-200/80">
+                      <div className="flex items-start gap-3">
+                        <div className="w-9 h-9 rounded-lg bg-sky-50 border border-sky-100 flex items-center justify-center shrink-0 mt-0.5">
+                          <CheckCircle2 className="w-5 h-5 text-[#19336A]" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-bold text-[#19336A] leading-snug">
+                            Avaliação Visual Completa e Humanizada
+                          </p>
+                          <p className="text-xs text-slate-600 mt-0.5 leading-relaxed">
+                            Equipamentos computadorizados de precisão para uma prescrição segura e confortável.
+                          </p>
+                        </div>
                       </div>
-                      <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3 text-sm font-medium">
-                        <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
-                        <span>Análise preventiva da saúde ocular</span>
-                      </div>
-                      <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3 text-sm font-medium">
-                        <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
-                        <span>Prescrição personalizada para óculos</span>
-                      </div>
-                    </div>
-
-                    <div className="pt-1">
-                      <a
-                        href={WHATSAPP_LINK}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white py-3.5 px-4 rounded-xl font-semibold shadow-xs transition-all text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-600 min-h-[48px]"
-                      >
-                        <span>Verificar Horários Disponíveis</span>
-                        <ChevronRight className="w-4 h-4" />
-                      </a>
                     </div>
                   </div>
                 </div>
