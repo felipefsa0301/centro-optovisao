@@ -77,7 +77,7 @@ export default function Home() {
     {
       icon: Sparkles,
       title: "Equipamentos Computadorizados",
-      desc: "Tecnologia de ponta para diagnósticos confiáveis, testes rápidos e prescrições com precisão máxima para o seu grau.",
+      desc: "Tecnologia moderna para diagnósticos confiáveis, testes rápidos e prescrições com precisão máxima para o seu grau.",
     },
     {
       icon: UserCheck,
@@ -174,7 +174,7 @@ export default function Home() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#19336A] hover:bg-[#0F224A] text-white px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold shadow-sm transition-all duration-200 hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#19336A] min-h-[44px]"
+              className="inline-flex items-center gap-2 bg-[#19336A] hover:bg-[#0F224A] text-white px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold shadow-xs transition-all duration-200 hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#19336A] min-h-[44px]"
             >
               <Calendar className="w-4 h-4 text-sky-300 shrink-0" />
               <span>Agendar Consulta</span>
@@ -230,28 +230,25 @@ export default function Home() {
 
       {/* Conteúdo Principal */}
       <main className="flex-1">
-        {/* Hero Section - Amplificada (Bolder) */}
-        <section className="relative overflow-hidden bg-gradient-to-b from-slate-100/90 via-white to-slate-50 py-20 sm:py-28 border-b border-slate-200">
-          {/* Círculo sutil de iluminação de fundo */}
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-sky-100/40 rounded-full blur-3xl pointer-events-none -z-10" />
-
+        {/* Hero Section - Sereno, Equilibrado e Elegante (Quieter) */}
+        <section className="relative overflow-hidden bg-slate-50/70 py-16 sm:py-20 border-b border-slate-200/80">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
-              <div className="lg:col-span-7 space-y-7">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#19336A] tracking-tight leading-[1.1]">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              <div className="lg:col-span-7 space-y-6">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#19336A] tracking-tight leading-[1.18]">
                   Sua visão nítida, confortável e protegida.
                 </h1>
 
-                <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-xl font-normal">
+                <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl font-normal">
                   No <strong>Centro OptoVisão</strong> em Santo Estêvão, cuidamos da sua saúde visual primária com tecnologia computadorizada, tempo dedicado para você e prescrição exata para seus novos óculos.
                 </p>
 
-                <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                <div className="pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
                   <a
                     href={WHATSAPP_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4.5 rounded-2xl text-base font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-600 min-h-[52px]"
+                    className="inline-flex items-center justify-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-7 py-3.5 rounded-xl text-base font-semibold shadow-xs hover:shadow-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-600 min-h-[48px]"
                   >
                     <MessageCircle className="w-5 h-5 text-white" />
                     <span>Agendar pelo WhatsApp</span>
@@ -259,73 +256,70 @@ export default function Home() {
 
                   <a
                     href="#exames"
-                    className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border-2 border-slate-200 hover:border-slate-300 px-7 py-4.5 rounded-2xl text-base font-bold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#19336A] min-h-[52px] shadow-xs"
+                    className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 px-6 py-3.5 rounded-xl text-base font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#19336A] min-h-[48px]"
                   >
                     <span>Conhecer Exames</span>
-                    <ArrowRight className="w-4 h-4 text-slate-500" />
+                    <ArrowRight className="w-4 h-4 text-slate-400" />
                   </a>
                 </div>
 
-                {/* Diferenciais Rápidos com Alta Presença Visual */}
-                <div className="pt-6 border-t border-slate-200/90 grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
-                  <div className="p-4 bg-white rounded-2xl border border-slate-200 shadow-xs hover:border-sky-300 transition-colors">
-                    <div className="text-base font-black text-[#19336A]">Santo Estêvão - BA</div>
+                {/* Diferenciais Rápidos com visual calmo e equilibrado */}
+                <div className="pt-5 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-3 gap-3.5 text-left">
+                  <div className="p-3.5 bg-white rounded-xl border border-slate-200/80">
+                    <div className="text-sm font-bold text-[#19336A]">Santo Estêvão - BA</div>
                     <div className="text-xs text-slate-500 font-medium mt-0.5">Atendimento local de excelência</div>
                   </div>
-                  <div className="p-4 bg-white rounded-2xl border border-slate-200 shadow-xs hover:border-sky-300 transition-colors">
-                    <div className="text-base font-black text-[#19336A]">Bacharel em Optometria</div>
+                  <div className="p-3.5 bg-white rounded-xl border border-slate-200/80">
+                    <div className="text-sm font-bold text-[#19336A]">Bacharel em Optometria</div>
                     <div className="text-xs text-slate-500 font-medium mt-0.5">Atenção primária especializada</div>
                   </div>
-                  <div className="p-4 bg-white rounded-2xl border border-slate-200 shadow-xs hover:border-sky-300 transition-colors">
-                    <div className="text-base font-black text-[#19336A]">Sem Filas de Espera</div>
+                  <div className="p-3.5 bg-white rounded-xl border border-slate-200/80">
+                    <div className="text-sm font-bold text-[#19336A]">Sem Filas de Espera</div>
                     <div className="text-xs text-slate-500 font-medium mt-0.5">Horário exclusivo e pontual</div>
                   </div>
                 </div>
               </div>
 
-              {/* Card de Alerta de Sintomas - Presença Imponente */}
+              {/* Card de Alerta de Sintomas - Calmo, Sólido e Acolhedor */}
               <div className="lg:col-span-5">
-                <div className="relative bg-gradient-to-br from-[#19336A] via-[#152C5B] to-[#0F224A] rounded-3xl p-7 sm:p-9 text-white shadow-2xl border border-white/10 overflow-hidden">
-                  {/* Detalhe luminoso discreto */}
-                  <div className="absolute -top-12 -right-12 w-40 h-40 bg-sky-400/20 rounded-full blur-2xl pointer-events-none" />
-
-                  <div className="space-y-6 relative z-10">
-                    <div className="inline-flex p-3.5 bg-white/15 rounded-2xl backdrop-blur-md border border-white/15">
-                      <Eye className="w-9 h-9 text-sky-300" />
+                <div className="relative bg-gradient-to-br from-[#19336A] to-[#152C5B] rounded-2xl p-6 sm:p-7 text-white shadow-md border border-white/10">
+                  <div className="space-y-5">
+                    <div className="inline-flex p-3 bg-white/10 rounded-xl">
+                      <Eye className="w-8 h-8 text-sky-300" />
                     </div>
 
-                    <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight leading-snug">
+                    <h2 className="text-xl sm:text-2xl font-bold tracking-tight">
                       Quando foi a sua última consulta visual?
                     </h2>
 
-                    <p className="text-slate-200 text-sm sm:text-base leading-relaxed">
+                    <p className="text-slate-200 text-sm leading-relaxed">
                       Sintomas comuns como dores de cabeça ao fim do dia, cansaço em frente a telas e visão embaçada para perto ou longe indicam a necessidade de uma avaliação detalhada.
                     </p>
 
-                    <div className="space-y-3 pt-1">
-                      <div className="flex items-center gap-3.5 bg-white/10 hover:bg-white/15 transition-colors rounded-xl p-3.5 backdrop-blur-md text-sm border border-white/10 font-medium">
-                        <CheckCircle2 className="w-5 h-5 text-emerald-300 shrink-0" />
+                    <div className="space-y-2.5 pt-1">
+                      <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3 text-sm font-medium">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
                         <span>Avaliação refracional computadorizada</span>
                       </div>
-                      <div className="flex items-center gap-3.5 bg-white/10 hover:bg-white/15 transition-colors rounded-xl p-3.5 backdrop-blur-md text-sm border border-white/10 font-medium">
-                        <CheckCircle2 className="w-5 h-5 text-emerald-300 shrink-0" />
+                      <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3 text-sm font-medium">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
                         <span>Análise preventiva da saúde ocular</span>
                       </div>
-                      <div className="flex items-center gap-3.5 bg-white/10 hover:bg-white/15 transition-colors rounded-xl p-3.5 backdrop-blur-md text-sm border border-white/10 font-medium">
-                        <CheckCircle2 className="w-5 h-5 text-emerald-300 shrink-0" />
+                      <div className="flex items-center gap-3 bg-white/10 rounded-lg p-3 text-sm font-medium">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-300 shrink-0" />
                         <span>Prescrição personalizada para óculos</span>
                       </div>
                     </div>
 
-                    <div className="pt-2">
+                    <div className="pt-1">
                       <a
                         href={WHATSAPP_LINK}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white py-4 px-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-600 min-h-[52px]"
+                        className="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white py-3.5 px-4 rounded-xl font-semibold shadow-xs transition-all text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-600 min-h-[48px]"
                       >
                         <span>Verificar Horários Disponíveis</span>
-                        <ChevronRight className="w-5 h-5" />
+                        <ChevronRight className="w-4 h-4" />
                       </a>
                     </div>
                   </div>
@@ -336,11 +330,11 @@ export default function Home() {
         </section>
 
         {/* Sobre a Clínica e Escopo Legal */}
-        <section id="sobre" className="py-20 bg-white">
+        <section id="sobre" className="py-16 sm:py-20 bg-white">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-              <div className="lg:col-span-6 space-y-5">
-                <h2 className="text-3xl sm:text-4xl font-extrabold text-[#19336A] tracking-tight">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+              <div className="lg:col-span-6 space-y-4">
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#19336A] tracking-tight">
                   Compromisso com o seu bem-estar e nitidez diária
                 </h2>
                 <p className="text-slate-600 leading-relaxed text-base">
@@ -350,41 +344,41 @@ export default function Home() {
                   O optometrista é o especialista responsável por avaliar o sistema visual, diagnosticar disfunções de refração e prescrever óculos com exatidão. Atuamos com ética rigorosa: nosso papel não substitui a oftalmologia médica (cirurgias e tratamento de doenças), promovendo uma triagem segura e encaminhamento ágil a médicos sempre que necessário.
                 </p>
 
-                <ul className="space-y-3 pt-2">
+                <ul className="space-y-2.5 pt-1">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-sky-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-sky-600 shrink-0 mt-1" />
                     <span className="text-sm text-slate-700"><strong>Ambiente planejado e climatizado</strong> para garantir total conforto e precisão durante os testes.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-sky-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-sky-600 shrink-0 mt-1" />
                     <span className="text-sm text-slate-700"><strong>Equipamentos modernos</strong> calibrados periodicamente para resultados seguros.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-sky-600 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-sky-600 shrink-0 mt-1" />
                     <span className="text-sm text-slate-700"><strong>Ética profissional</strong> e encaminhamento ágil a médicos oftalmologistas caso haja indício de doenças oculares.</span>
                   </li>
                 </ul>
               </div>
 
               <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-2">
-                  <div className="text-3xl font-bold text-[#19336A]">100%</div>
+                <div className="bg-slate-50 p-5 rounded-xl border border-slate-200/80 space-y-1.5">
+                  <div className="text-2xl font-bold text-[#19336A]">100%</div>
                   <h3 className="text-sm font-semibold text-slate-800">Adaptação Garantida</h3>
                   <p className="text-xs text-slate-500 leading-relaxed">
                     Acompanhamento dedicado até a perfeita adaptação dos seus novos óculos.
                   </p>
                 </div>
-                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-2">
-                  <div className="text-3xl font-bold text-[#19336A]">Pontual</div>
+                <div className="bg-slate-50 p-5 rounded-xl border border-slate-200/80 space-y-1.5">
+                  <div className="text-2xl font-bold text-[#19336A]">Pontual</div>
                   <h3 className="text-sm font-semibold text-slate-800">Sem Filas de Espera</h3>
                   <p className="text-xs text-slate-500 leading-relaxed">
                     Consultas com horário exclusivo reservado para o seu atendimento.
                   </p>
                 </div>
-                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-2 sm:col-span-2">
+                <div className="bg-slate-50 p-5 rounded-xl border border-slate-200/80 space-y-1.5 sm:col-span-2">
                   <div className="flex items-center gap-3">
-                    <div className="p-2.5 bg-sky-100 rounded-xl text-sky-700 shrink-0">
-                      <Building2 className="w-5 h-5" />
+                    <div className="p-2 bg-sky-100 rounded-lg text-sky-700 shrink-0">
+                      <Building2 className="w-4 h-4" />
                     </div>
                     <div>
                       <h3 className="text-sm font-bold text-slate-800">Localização Acessível em Santo Estêvão</h3>
@@ -398,39 +392,39 @@ export default function Home() {
         </section>
 
         {/* Exames - Avaliação Visual Completa */}
-        <section id="exames" className="py-20 bg-slate-50 border-t border-b border-slate-200">
+        <section id="exames" className="py-16 sm:py-20 bg-slate-50 border-t border-b border-slate-200/80">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#19336A] tracking-tight">
+            <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14 space-y-3">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#19336A] tracking-tight">
                 Avaliação Visual Completa 👁️
               </h2>
-              <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
+              <p className="text-slate-600 text-base leading-relaxed">
                 A sua saúde visual está em excelentes mãos em Santo Estêvão. O seu atendimento será realizado por um <strong>Bacharel em Optometria</strong>, profissional de nível superior especialista no cuidado primário e funcional da visão no Brasil.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
               {services.map((item, idx) => {
                 const Icon = item.icon;
                 const serviceLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! ${item.message} no Centro OptoVisão em Santo Estêvão.`)}`;
                 return (
                   <div
                     key={idx}
-                    className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between"
+                    className="bg-white p-6 sm:p-7 rounded-xl border border-slate-200/90 shadow-xs hover:border-slate-300 transition-colors flex flex-col justify-between"
                   >
-                    <div className="space-y-4">
+                    <div className="space-y-3.5">
                       <div className="flex items-center justify-between">
-                        <div className="p-3 bg-[#19336A]/5 rounded-xl text-[#19336A]">
-                          <Icon className="w-6 h-6" />
+                        <div className="p-2.5 bg-[#19336A]/5 rounded-lg text-[#19336A]">
+                          <Icon className="w-5 h-5" />
                         </div>
-                        <span className="text-xs font-semibold px-3 py-1 rounded-full bg-sky-50 text-[#19336A] border border-sky-100">
+                        <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-sky-50 text-[#19336A] border border-sky-100">
                           {item.tag}
                         </span>
                       </div>
 
                       <div className="flex items-center gap-2">
-                        <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />
-                        <h3 className="text-xl font-bold text-[#19336A] tracking-tight">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                        <h3 className="text-lg font-bold text-[#19336A] tracking-tight">
                           {item.title}
                         </h3>
                       </div>
@@ -440,7 +434,7 @@ export default function Home() {
                       </p>
                     </div>
 
-                    <div className="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+                    <div className="pt-4 mt-5 border-t border-slate-100 flex items-center justify-between">
                       <a
                         href={serviceLink}
                         target="_blank"
@@ -457,10 +451,10 @@ export default function Home() {
             </div>
 
             {/* Cuidado Integrado Banner */}
-            <div className="mt-10 bg-white border border-sky-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-              <div className="space-y-2 max-w-2xl">
-                <div className="flex items-center gap-2 text-[#19336A] font-bold text-lg">
-                  <ShieldCheck className="w-6 h-6 text-sky-600 shrink-0" />
+            <div className="mt-8 bg-white border border-sky-100 rounded-xl p-5 sm:p-6 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-5">
+              <div className="space-y-1.5 max-w-2xl">
+                <div className="flex items-center gap-2 text-[#19336A] font-bold text-base">
+                  <ShieldCheck className="w-5 h-5 text-sky-600 shrink-0" />
                   <span>Cuidado Integrado</span>
                 </div>
                 <p className="text-sm text-slate-600 leading-relaxed">
@@ -472,7 +466,7 @@ export default function Home() {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="shrink-0 inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-4 rounded-xl text-sm shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-600 min-h-[48px]"
+                className="shrink-0 inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-3 rounded-xl text-sm shadow-xs transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-600 min-h-[44px]"
               >
                 <MessageCircle className="w-4 h-4 text-white" />
                 <span>Agendar pelo WhatsApp</span>
@@ -482,10 +476,10 @@ export default function Home() {
         </section>
 
         {/* Diferenciais */}
-        <section id="diferenciais" className="py-20 bg-white">
+        <section id="diferenciais" className="py-16 sm:py-20 bg-white">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#19336A] tracking-tight">
+            <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14 space-y-2.5">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#19336A] tracking-tight">
                 Excelência e Atenção aos Detalhes
               </h2>
               <p className="text-slate-600 text-sm sm:text-base">
@@ -493,21 +487,21 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {differentiators.map((diff, index) => {
                 const Icon = diff.icon;
                 return (
                   <div
                     key={index}
-                    className="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 hover:border-slate-300 transition-all space-y-3"
+                    className="bg-slate-50/70 p-5 rounded-xl border border-slate-200/80 space-y-2.5"
                   >
-                    <div className="p-2.5 w-fit rounded-xl bg-white text-[#19336A] shadow-xs">
-                      <Icon className="w-5 h-5" />
+                    <div className="p-2 w-fit rounded-lg bg-white text-[#19336A] shadow-xs">
+                      <Icon className="w-4 h-4" />
                     </div>
-                    <h3 className="text-base font-bold text-slate-800">
+                    <h3 className="text-sm font-bold text-slate-800">
                       {diff.title}
                     </h3>
-                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    <p className="text-xs text-slate-600 leading-relaxed">
                       {diff.desc}
                     </p>
                   </div>
@@ -518,15 +512,15 @@ export default function Home() {
         </section>
 
         {/* FAQ Section */}
-        <section id="faq" className="py-20 bg-slate-50 border-t border-slate-200">
+        <section id="faq" className="py-16 sm:py-20 bg-slate-50 border-t border-slate-200/80">
           <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-12 space-y-3">
-              <h2 className="text-3xl font-extrabold text-[#19336A] tracking-tight">
+            <div className="text-center mb-10 space-y-2.5">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#19336A] tracking-tight">
                 Tire suas dúvidas antes de agendar
               </h2>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3.5">
               {faqs.map((faq, index) => {
                 const isOpen = activeFaq === index;
                 const buttonId = `faq-btn-${index}`;
@@ -534,24 +528,24 @@ export default function Home() {
                 return (
                   <div
                     key={index}
-                    className="bg-white rounded-xl border border-slate-200 overflow-hidden transition-colors"
+                    className="bg-white rounded-xl border border-slate-200/90 overflow-hidden transition-colors"
                   >
                     <button
                       id={buttonId}
                       aria-expanded={isOpen}
                       aria-controls={panelId}
                       onClick={() => toggleFaq(index)}
-                      className="w-full text-left px-6 py-4 flex items-center justify-between gap-4 font-semibold text-slate-800 hover:text-[#19336A] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#19336A] min-h-[48px]"
+                      className="w-full text-left px-5 py-3.5 flex items-center justify-between gap-4 font-semibold text-slate-800 hover:text-[#19336A] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#19336A] min-h-[44px]"
                     >
                       <span className="text-sm sm:text-base">{faq.q}</span>
-                      <HelpCircle className={`w-5 h-5 text-slate-400 transition-transform duration-200 ${isOpen ? "rotate-180 text-sky-600" : ""}`} />
+                      <HelpCircle className={`w-4 h-4 text-slate-400 transition-transform duration-200 ${isOpen ? "rotate-180 text-sky-600" : ""}`} />
                     </button>
                     {isOpen && (
                       <div
                         id={panelId}
                         role="region"
                         aria-labelledby={buttonId}
-                        className="px-6 pb-4 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3"
+                        className="px-5 pb-3.5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-2.5"
                       >
                         {faq.a}
                       </div>
@@ -564,13 +558,13 @@ export default function Home() {
         </section>
 
         {/* CTA Final */}
-        <section className="py-16 bg-[#19336A] text-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-6">
-            <div className="inline-flex p-3 bg-white/10 rounded-2xl backdrop-blur-sm">
-              <Eye className="w-8 h-8 text-sky-300" />
+        <section className="py-14 sm:py-16 bg-[#19336A] text-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-5">
+            <div className="inline-flex p-2.5 bg-white/10 rounded-xl">
+              <Eye className="w-7 h-7 text-sky-300" />
             </div>
 
-            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
               Pronto para ver o mundo com total nitidez e conforto?
             </h2>
 
@@ -578,19 +572,19 @@ export default function Home() {
               Agende hoje mesmo sua consulta no Centro OptoVisão em Santo Estêvão. Nossa equipe está pronta para lhe atender com o cuidado que seus olhos merecem.
             </p>
 
-            <div className="pt-2">
+            <div className="pt-1">
               <a
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl text-base font-bold shadow-lg hover:shadow-xl transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-600 min-h-[48px]"
+                className="inline-flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-7 py-3.5 rounded-xl text-base font-semibold shadow-md transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-emerald-600 min-h-[48px]"
               >
                 <MessageCircle className="w-5 h-5" />
                 <span>Falar com a Recepção no WhatsApp</span>
               </a>
             </div>
 
-            <p className="text-xs text-slate-300 pt-2">
+            <p className="text-xs text-slate-300 pt-1">
               Horários flexíveis e atendimento personalizado com hora marcada.
             </p>
           </div>
@@ -598,15 +592,15 @@ export default function Home() {
       </main>
 
       {/* Rodapé */}
-      <footer className="bg-white border-t border-slate-200 py-12 text-slate-600 text-sm">
+      <footer className="bg-white border-t border-slate-200 py-10 text-slate-600 text-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex flex-col items-center md:items-start gap-2">
-            <div className="relative w-40 h-12">
+            <div className="relative w-36 h-11">
               <Image
                 src="/images/logo.png"
                 alt="Centro OptoVisão"
                 fill
-                sizes="160px"
+                sizes="144px"
                 className="object-contain object-left"
               />
             </div>
