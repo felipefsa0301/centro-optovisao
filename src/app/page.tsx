@@ -198,32 +198,33 @@ export default function LandingPage() {
     <div className="min-h-screen flex flex-col bg-[#FAF9F6] text-slate-800">
       {/* Barra de Aviso Superior */}
       <div className="bg-[#0F224A] text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-white/10">
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-4 text-center sm:text-left">
-            <span className="flex items-center gap-1.5 font-medium">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2.5">
+          <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-3 gap-y-1 text-center md:text-left">
+            <span className="flex items-center gap-1.5 font-medium whitespace-nowrap">
               <MapPin className="w-3.5 h-3.5 text-sky-400 shrink-0" /> Praça 7 de Setembro — Santo Estêvão - BA
             </span>
-            <span className="hidden lg:inline-block text-slate-500">•</span>
-            <span className="hidden lg:inline-block text-slate-300">
+            <span className="hidden xl:inline-block text-slate-500">•</span>
+            <span className="text-slate-300 text-xs">
               Atendimentos também em Coração de Maria, Alagoinhas, Candeias e Conceição do Jacuípe
             </span>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 sm:gap-4 shrink-0">
             <a
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Siga o Centro OptoVisão no Instagram"
-              className="min-h-[44px] sm:min-h-0 inline-flex items-center gap-1.5 py-1 px-2 text-slate-300 hover:text-white font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-md"
+              className="inline-flex items-center gap-1.5 py-1 px-2 text-slate-300 hover:text-white font-medium transition-colors whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-md"
             >
               <InstagramIcon className="w-3.5 h-3.5 shrink-0 text-pink-400" />
               <span>{INSTAGRAM_HANDLE}</span>
             </a>
+            <span className="text-slate-600">•</span>
             <a
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="min-h-[44px] sm:min-h-0 inline-flex items-center gap-1.5 py-1 px-2.5 text-sky-300 hover:text-white font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-md"
+              className="inline-flex items-center gap-1.5 py-1 px-2 text-sky-300 hover:text-white font-medium transition-colors whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-md"
             >
               <Phone className="w-3.5 h-3.5 shrink-0" />
               <span>{PHONE_DISPLAY}</span>
