@@ -844,30 +844,30 @@ export default function LandingPage() {
 
       {/* Rodapé */}
       <footer className="bg-[#FAF9F6] border-t border-stone-200/90 py-12 text-slate-600 text-sm">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex flex-col items-center md:items-start gap-2">
-            <div className="relative w-36 h-11">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
+          <div className="flex flex-col items-center md:items-start gap-2.5 max-w-sm text-center md:text-left">
+            <div className="relative w-40 h-12">
               <Image
                 src="/images/logo.png"
                 alt="Centro OptoVisão"
                 fill
-                sizes="144px"
-                className="object-contain object-left"
+                sizes="160px"
+                className="object-contain object-center md:object-left"
               />
             </div>
-            <p className="text-xs text-slate-500 text-center md:text-left max-w-sm">
-              Centro OptoVisão — Praça 7 de Setembro, Santo Estêvão - BA.
+            <p className="text-xs text-slate-500 leading-relaxed">
+              Praça 7 de Setembro, Santo Estêvão - BA.
               <br />
-              Atendimentos também em Coração de Maria, Alagoinhas, Candeias e Conceição do Jacuípe.
+              <span className="text-slate-400">Atendimentos também em Coração de Maria, Alagoinhas, Candeias e Conceição do Jacuípe.</span>
             </p>
-            <div className="flex items-center gap-4 text-xs font-semibold pt-1">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 text-xs font-semibold pt-1">
               <a
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-emerald-700 hover:text-emerald-800 transition-colors"
+                className="inline-flex items-center gap-1.5 text-emerald-700 hover:text-emerald-800 transition-colors whitespace-nowrap"
               >
-                <Phone className="w-3.5 h-3.5" />
+                <Phone className="w-3.5 h-3.5 shrink-0" />
                 <span>{PHONE_DISPLAY}</span>
               </a>
               <span className="text-slate-300">•</span>
@@ -875,24 +875,26 @@ export default function LandingPage() {
                 href={INSTAGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-pink-700 hover:text-pink-800 transition-colors"
+                className="inline-flex items-center gap-1.5 text-pink-700 hover:text-pink-800 transition-colors whitespace-nowrap"
               >
-                <InstagramIcon className="w-3.5 h-3.5" />
+                <InstagramIcon className="w-3.5 h-3.5 shrink-0" />
                 <span>{INSTAGRAM_HANDLE}</span>
               </a>
             </div>
           </div>
 
-          <nav aria-label="Navegação do rodapé" className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs text-slate-600">
-            <a href="#sinais" className="min-h-[44px] sm:min-h-0 py-2 sm:py-0 inline-flex items-center hover:text-slate-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#19336A] rounded-md">Sinais de Alerta</a>
-            <a href="#sobre" className="min-h-[44px] sm:min-h-0 py-2 sm:py-0 inline-flex items-center hover:text-slate-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#19336A] rounded-md">Sobre</a>
-            <a href="#exames" className="min-h-[44px] sm:min-h-0 py-2 sm:py-0 inline-flex items-center hover:text-slate-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#19336A] rounded-md">Exames</a>
-            <a href="#jornada" className="min-h-[44px] sm:min-h-0 py-2 sm:py-0 inline-flex items-center hover:text-slate-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#19336A] rounded-md">Como Funciona</a>
-            <a href="#faq" className="min-h-[44px] sm:min-h-0 py-2 sm:py-0 inline-flex items-center hover:text-slate-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#19336A] rounded-md">Dúvidas</a>
+          <nav aria-label="Navegação do rodapé" className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-slate-600">
+            <a href="#sinais" className="py-1 hover:text-[#19336A] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#19336A] rounded-md whitespace-nowrap">Sinais de Alerta</a>
+            <a href="#sobre" className="py-1 hover:text-[#19336A] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#19336A] rounded-md whitespace-nowrap">Sobre a Clínica</a>
+            <a href="#exames" className="py-1 hover:text-[#19336A] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#19336A] rounded-md whitespace-nowrap">Exames</a>
+            <a href="#jornada" className="py-1 hover:text-[#19336A] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#19336A] rounded-md whitespace-nowrap">Como Funciona</a>
+            <a href="#faq" className="py-1 hover:text-[#19336A] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#19336A] rounded-md whitespace-nowrap">Dúvidas</a>
           </nav>
 
-          <div className="text-xs text-slate-500 text-center md:text-right">
-            © 2026 Centro OptoVisão. Todos os direitos reservados.
+          <div className="text-xs text-slate-400 text-center md:text-right shrink-0">
+            © 2026 Centro OptoVisão.
+            <br />
+            Todos os direitos reservados.
           </div>
         </div>
       </footer>
