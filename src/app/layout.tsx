@@ -3,15 +3,19 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://centrooptovisao.com.br"),
-  title: "Centro OptoVisão | Exame de Vista e Optometria em Santo Estêvão - BA",
+  title: "Centro OptoVisão | Exame de Vista e Optometria em Santo Estêvão e Região",
   description:
-    "Avaliação visual completa em Santo Estêvão: acuidade visual, refração computadorizada (grau de óculos), fundo de olho e testes motores com Bacharel em Optometria.",
+    "Avaliação visual completa no Centro OptoVisão: acuidade visual, refração computadorizada (grau de óculos) e cuidados com Bacharel em Optometria. Atendimento na Praça 7 de Setembro em Santo Estêvão e também em Coração de Maria, Alagoinhas, Candeias e Conceição do Jacuípe.",
   keywords: [
     "optometrista santo estevao",
     "exame de vista santo estevao ba",
     "clinica de olhos santo estevao",
     "consulta optometrica santo estevao",
     "grau de oculos santo estevao",
+    "optometria coracao de maria",
+    "optometria alagoinhas",
+    "optometria candeias",
+    "optometria conceicao do jacuipe",
     "Centro OptoVisão",
     "saúde visual bahia",
   ],
@@ -19,9 +23,9 @@ export const metadata: Metadata = {
     canonical: "https://centrooptovisao.com.br",
   },
   openGraph: {
-    title: "Centro OptoVisão | Saúde Visual e Optometria em Santo Estêvão",
+    title: "Centro OptoVisão | Saúde Visual e Optometria em Santo Estêvão e Região",
     description:
-      "Atendimento humanizado com Bacharel em Optometria. Agende sua Avaliação Visual Completa em Santo Estêvão - BA.",
+      "Atendimento humanizado com Bacharel em Optometria. Consultório na Praça 7 de Setembro (Santo Estêvão) e atendimentos em Coração de Maria, Alagoinhas, Candeias e Conceição do Jacuípe.",
     url: "https://centrooptovisao.com.br",
     siteName: "Centro OptoVisão",
     locale: "pt_BR",
@@ -47,14 +51,18 @@ const jsonLd = {
   name: "Centro OptoVisão",
   image: "https://centrooptovisao.com.br/images/logo.png",
   description:
-    "Centro especializado em cuidados primários da saúde visual, refração computadorizada para óculos e avaliação funcional em Santo Estêvão - BA. Atendimento por Bacharel em Optometria.",
-  telephone: "+55-11-99999-9999",
+    "Centro especializado em cuidados primários da saúde visual, refração computadorizada para óculos e avaliação funcional na Praça 7 de Setembro em Santo Estêvão - BA, com atendimentos também em Coração de Maria, Alagoinhas, Candeias e Conceição do Jacuípe. Atendimento por Bacharel em Optometria.",
+  telephone: "+55-75-99180-8866",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Praça 7 de Setembro",
     addressLocality: "Santo Estêvão",
     addressRegion: "BA",
     addressCountry: "BR",
   },
+  sameAs: [
+    "https://instagram.com/centrooptovisao"
+  ],
   geo: {
     "@type": "GeoCoordinates",
     latitude: -12.4303,

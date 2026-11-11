@@ -29,9 +29,32 @@ import {
   Minus
 } from "lucide-react";
 
-// Configuração oficial de contato - Centro OptoVisão Santo Estêvão - BA
-const WHATSAPP_NUMBER = "5575999999999";
-const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20no%20Centro%20OptoVis%C3%A3o%20em%20Santo%20Est%C3%AAv%C3%A3o.`;
+// Ícone SVG personalizado do Instagram
+function InstagramIcon({ className = "w-4 h-4" }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    </svg>
+  );
+}
+
+// Configuração oficial de contato - Centro OptoVisão
+const PHONE_DISPLAY = "(75) 99180-8866";
+const WHATSAPP_NUMBER = "5575991808866";
+const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20no%20Centro%20OptoVis%C3%A3o.`;
+const INSTAGRAM_URL = "https://instagram.com/centrooptovisao";
+const INSTAGRAM_HANDLE = "@centrooptovisao";
 
 export default function LandingPage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(0);
@@ -162,8 +185,12 @@ export default function LandingPage() {
       a: "Sim, realizamos avaliações visuais personalizadas para diferentes faixas etárias em Santo Estêvão, adaptando os testes motores, sensoriais e de acuidade visual conforme a necessidade de cada paciente."
     },
     {
+      q: "Onde fica o consultório e quais cidades são atendidas?",
+      a: "O endereço principal do Centro OptoVisão fica localizado na Praça 7 de Setembro em Santo Estêvão - BA. Além do consultório fixo, a optometrista realiza atendimentos periódicos agendados nas cidades vizinhas: Coração de Maria, Alagoinhas, Candeias e Conceição do Jacuípe. Consulte pelo WhatsApp as próximas datas para a sua cidade."
+    },
+    {
       q: "Como faço para agendar minha consulta?",
-      a: "O agendamento é rápido e direto pelo nosso WhatsApp. Basta clicar em qualquer botão de agendamento nesta página para escolher o melhor dia e horário com a nossa recepção."
+      a: "O agendamento é rápido e direto pelo nosso WhatsApp no número (75) 99180-8866 ou através do nosso Instagram oficial @centrooptovisao. Basta clicar em qualquer botão de agendamento nesta página para falar com nossa equipe."
     }
   ];
 
@@ -174,22 +201,34 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-4 text-center sm:text-left">
             <span className="flex items-center gap-1.5 font-medium">
-              <MapPin className="w-3.5 h-3.5 text-sky-400 shrink-0" /> Santo Estêvão - BA
+              <MapPin className="w-3.5 h-3.5 text-sky-400 shrink-0" /> Praça 7 de Setembro — Santo Estêvão - BA
             </span>
-            <span className="hidden md:inline-block text-slate-500">•</span>
-            <span className="hidden md:flex items-center gap-1.5 text-slate-300">
-              <Clock className="w-3.5 h-3.5 text-sky-400 shrink-0" /> Seg a Sex: 08h às 18h | Sáb: 08h às 12h
+            <span className="hidden lg:inline-block text-slate-500">•</span>
+            <span className="hidden lg:inline-block text-slate-300">
+              Atendimentos também em Coração de Maria, Alagoinhas, Candeias e Conceição do Jacuípe
             </span>
           </div>
-          <a
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="min-h-[44px] sm:min-h-0 inline-flex items-center gap-1.5 py-1 px-2.5 text-sky-300 hover:text-white font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-md"
-          >
-            <Phone className="w-3.5 h-3.5 shrink-0" />
-            <span>Atendimento via WhatsApp</span>
-          </a>
+          <div className="flex items-center gap-4">
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Siga o Centro OptoVisão no Instagram"
+              className="min-h-[44px] sm:min-h-0 inline-flex items-center gap-1.5 py-1 px-2 text-slate-300 hover:text-white font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-md"
+            >
+              <InstagramIcon className="w-3.5 h-3.5 shrink-0 text-pink-400" />
+              <span>{INSTAGRAM_HANDLE}</span>
+            </a>
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="min-h-[44px] sm:min-h-0 inline-flex items-center gap-1.5 py-1 px-2.5 text-sky-300 hover:text-white font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 rounded-md"
+            >
+              <Phone className="w-3.5 h-3.5 shrink-0" />
+              <span>{PHONE_DISPLAY}</span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -557,10 +596,10 @@ export default function LandingPage() {
                     </div>
                     <div>
                       <h3 className="text-base font-bold text-[#19336A]">
-                        Estrutura Acolhedora em Santo Estêvão - BA
+                        Endereço Principal na Praça 7 de Setembro — Santo Estêvão - BA
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-                        Consultório climatizado, acessível e preparado para atender crianças, adultos e idosos com conforto.
+                        Consultório climatizado, moderno e acessível no coração de Santo Estêvão. Além disso, a optometrista realiza atendimentos periódicos e avaliações em <strong>Coração de Maria, Alagoinhas, Candeias e Conceição do Jacuípe</strong>.
                       </p>
                     </div>
                   </div>
@@ -570,7 +609,7 @@ export default function LandingPage() {
                     rel="noopener noreferrer"
                     className="shrink-0 min-h-[44px] px-4 py-2.5 rounded-full bg-[#F3F1EC] hover:bg-stone-200/80 text-[#19336A] text-xs font-bold inline-flex items-center gap-1.5 transition-colors"
                   >
-                    <span>Agendar visita</span>
+                    <span>Consultar agenda</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -815,9 +854,32 @@ export default function LandingPage() {
                 className="object-contain object-left"
               />
             </div>
-            <p className="text-xs text-slate-500 text-center md:text-left">
-              Centro OptoVisão — Excelência em Optometria e Saúde Visual em Santo Estêvão - BA.
+            <p className="text-xs text-slate-500 text-center md:text-left max-w-sm">
+              Centro OptoVisão — Praça 7 de Setembro, Santo Estêvão - BA.
+              <br />
+              Atendimentos também em Coração de Maria, Alagoinhas, Candeias e Conceição do Jacuípe.
             </p>
+            <div className="flex items-center gap-4 text-xs font-semibold pt-1">
+              <a
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-emerald-700 hover:text-emerald-800 transition-colors"
+              >
+                <Phone className="w-3.5 h-3.5" />
+                <span>{PHONE_DISPLAY}</span>
+              </a>
+              <span className="text-slate-300">•</span>
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-pink-700 hover:text-pink-800 transition-colors"
+              >
+                <InstagramIcon className="w-3.5 h-3.5" />
+                <span>{INSTAGRAM_HANDLE}</span>
+              </a>
+            </div>
           </div>
 
           <nav aria-label="Navegação do rodapé" className="flex flex-wrap justify-center gap-4 sm:gap-6 text-xs text-slate-600">
