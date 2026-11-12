@@ -32,11 +32,11 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.centrooptovisao.com.br/images/og-image.png",
-        secureUrl: "https://www.centrooptovisao.com.br/images/og-image.png",
+        url: "https://www.centrooptovisao.com.br/images/og-image.jpg",
+        secureUrl: "https://www.centrooptovisao.com.br/images/og-image.jpg",
         width: 1200,
         height: 630,
-        type: "image/png",
+        type: "image/jpeg",
         alt: "Centro OptoVisão - Santo Estêvão",
       },
     ],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Centro OptoVisão | Saúde Visual e Optometria",
     description:
       "Atendimento humanizado com Bacharel em Optometria em Santo Estêvão e região.",
-    images: ["https://www.centrooptovisao.com.br/images/og-image.png"],
+    images: ["https://www.centrooptovisao.com.br/images/og-image.jpg"],
   },
   robots: {
     index: true,
