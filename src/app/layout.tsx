@@ -20,24 +20,33 @@ export const metadata: Metadata = {
     "saúde visual bahia",
   ],
   alternates: {
-    canonical: "https://centrooptovisao.com.br",
+    canonical: "https://www.centrooptovisao.com.br",
   },
   openGraph: {
     title: "Centro OptoVisão | Saúde Visual e Optometria em Santo Estêvão e Região",
     description:
       "Atendimento humanizado com Bacharel em Optometria. Consultório na Praça 7 de Setembro (Santo Estêvão) e atendimentos em Coração de Maria, Alagoinhas, Candeias e Conceição do Jacuípe.",
-    url: "https://centrooptovisao.com.br",
+    url: "https://www.centrooptovisao.com.br",
     siteName: "Centro OptoVisão",
     locale: "pt_BR",
     type: "website",
     images: [
       {
-        url: "/images/logo.png",
+        url: "https://www.centrooptovisao.com.br/images/og-image.png",
+        secureUrl: "https://www.centrooptovisao.com.br/images/og-image.png",
         width: 1200,
         height: 630,
+        type: "image/png",
         alt: "Centro OptoVisão - Santo Estêvão",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Centro OptoVisão | Saúde Visual e Optometria",
+    description:
+      "Atendimento humanizado com Bacharel em Optometria em Santo Estêvão e região.",
+    images: ["https://www.centrooptovisao.com.br/images/og-image.png"],
   },
   robots: {
     index: true,
